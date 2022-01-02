@@ -19,7 +19,7 @@ const Footer = () => {
                 
                 color="white" p ={5} m ={10}  
                 textAlign='center' >
-                    <Container maxWidth="lg">
+                    <Container maxWidth="lg" sx={{}}>
                         <Grid container spacing={5}>
                             <Grid item xs={12} sm = {3}>
                                 <Box borderBottom={1} mb={1} sx={{fontWeight:'bold'}} >Product</Box>
@@ -76,7 +76,7 @@ const Footer = () => {
                     
                     <Box pt= {3} >
                         <Divider style={{ background: 'white' }}/> 
-                        <container maxWidth = "lg">
+                        <Container maxWidth = "lg">
                      
                             <Grid container spacing={5}>
                     
@@ -96,7 +96,7 @@ const Footer = () => {
                     
                             </Grid>
 
-                        </container>
+                        </Container>
                     </Box>
                 </Box>
             </footer>
