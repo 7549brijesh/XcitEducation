@@ -1,0 +1,28 @@
+
+.btnstyle{
+    margin-left: 40rem;
+}
+.img{
+    width: 27vh;
+    height: 21vh;
+}
+.u-line{
+    text-decoration: none;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}
+.search input{
+    width: 20rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: .2rem;
+    outline: none;
+    border: 2px solid #1A5F7A;
+}
+.search input:hover{
+    border:3px solid #086E7D;
+}
