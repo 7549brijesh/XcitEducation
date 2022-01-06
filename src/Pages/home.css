@@ -3,8 +3,10 @@
     margin-left: 40rem;
 }
 .img{
-    width: 27vh;
-    height: 21vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
 }
 .u-line{
     text-decoration: none;
@@ -26,3 +28,9 @@
 .search input:hover{
     border:3px solid #086E7D;
 }
+@media screen and (max-width: 480px) {
+    .intern{
+      display: flex;
+      flex-direction: column;
+    }
+  }
