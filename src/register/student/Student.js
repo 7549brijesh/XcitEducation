@@ -1,38 +1,19 @@
 import { Grid, Paper, TextField,Button,Typography,Link } from "@mui/material";
 import React from "react";
-import './login.css';
-import CloseIcon from '@mui/icons-material/Close';
+import './style.css';
 import GoogleIcon from '@mui/icons-material/Google';
-import {makeStyles,ThemeProvider} from "@mui/styles";
+import Login from "../../login/Login";
 
-const useStyle=makeStyles((theme)=>({
-    bgcolor:{
-        backgroundColor:"-moz-initial",
-    },
-    
-}));
-
-function Login() {
-    const paperStyle={padding:20,height:'75vh',width:450,margin:"20px auto"}
-    const btstyle={margin:"8px 0"}
+function Student() {
+    const paperStyle={padding:20,height:'72vh',width:450,margin:"20px auto"}
+    const btstyle={margin:"10px 0"}
+    const Textstyle={margin:"0 4px"}
     const font={fontSize:17}
-    const classes=useStyle();
   return (
-    <Grid className={classes.bgcolor}>
+    <Grid>
       <Paper className="paper" elevation={10} style={paperStyle}>
-          <div className="close">
-              <Button><CloseIcon /></Button>
-          </div>
           <Grid>
               <div className="container">
-                  <div className="user-menu">
-                      <div id="student">
-                          <a className="u-line" href="#">Student</a> 
-                      </div>
-                      <div id="Employee">
-                          <a className="u-line" href="#">Employer/T&P</a>
-                      </div>
-                  </div>
                   <a className="g-login" href="www.google.com">
                       <div id="g-login">
                           <div className="g-img">
@@ -40,7 +21,7 @@ function Login() {
                               
                           </div>
                           <div className="g-content">
-                              Login with Google
+                              Sign Up with Google
                           </div>
                       </div>
                   </a>
@@ -51,19 +32,22 @@ function Login() {
                   <Grid>
                       <TextField label='Email' placeholder="@example.com" fullWidth required></TextField>
                       <TextField label='Password' sx={{mt:2}} placeholder="Enter Password" type="password" fullWidth required></TextField>
+                      <Typography display="flex" mt={3}>
+                          <TextField style={Textstyle} label="First Name" placeholder="Joe" ></TextField>
+                          <TextField label="Last Name" placeholder="Doe" ></TextField>
+                      </Typography>
                       <Typography style={btstyle}>
-                          <Link href="#">
-                          Forgot Password
+                      By signing up, you agree to our 
+                          <Link sx={{ml:1}} href="#">
+                          Term and condition
                           </Link>
                       </Typography>
                   </Grid>
-                  <Button type="submit" color="primary" variant="contained" style={btstyle} fullWidth>Login</Button>
-                  <Grid>
-                      <Typography style={font}>
-                      New to Internshala? Register(
-                          <Link href="#">Student</Link>/
-                          <Link href="#">Company</Link>
-                      )
+                  <Button type="submit" color="primary" variant="contained" style={btstyle} fullWidth>Sign Up</Button>
+                  <Grid sx={{ justifyContent: 'center' }}>
+                      <Typography ml={5} style={font}>
+                      Already registered?
+                          <Link href={Login}>Login</Link>
                       </Typography>
                   </Grid>
                   
@@ -75,4 +59,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Student;
