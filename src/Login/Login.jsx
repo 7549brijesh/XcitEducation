@@ -10,11 +10,7 @@ import React from "react";
 import "./login.css";
 import CloseIcon from "@mui/icons-material/Close";
 import GoogleIcon from "@mui/icons-material/Google";
-import { Routes, Route } from "react-router-dom";
-import StudentReg from "../Register/StudentReg";
-import CompanyReg from "../Register/CompanyReg";
-import StudentLog from "./StudentLog";
-import CompanyLog from "./CompanyLog";
+// import { Routes, Route } from "react-router-dom";
 
 function Login() {
   const paperStyle = {
@@ -87,6 +83,8 @@ function Login() {
                 variant="contained"
                 style={btstyle}
                 fullWidth
+                component={Link}
+                to="/login/MyApplication"
               >
                 Login
               </Button>
@@ -101,12 +99,6 @@ function Login() {
           </Grid>
         </Paper>
       </Grid>
-      <Routes>
-        <Route path="/register/StudentReg" element={<StudentReg />} />
-        <Route path="/register/CompanyReg" element={<CompanyReg />} />
-        <Route path="/login/StudentLog" element={<StudentLog />} />
-        <Route path="/login/CompanyLog" element={<CompanyLog />} />
-      </Routes>
     </>
   );
 }
