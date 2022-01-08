@@ -13,14 +13,14 @@ import SendIcon from "@mui/icons-material/Send";
 import "./home.css";
 import work from "./image/work.jfif";
 import job from "./image/jobs.png";
-import { makeStyles } from "@mui/material";
-// const useStyles=makeStyles((theme)=>({
-//   topographyStyle:{
-//     display:"flex",
-//   }
-// }));
+import { makeStyles } from "@mui/styles";
+const useStyles=makeStyles((theme)=>({
+  topographyStyle:{
+    display:"flex",
+  }
+}));
 const Home = () => {
-  // const classes=useStyles();
+  const classes=useStyles();
   return (
     <>
       <Grid m={10}>
