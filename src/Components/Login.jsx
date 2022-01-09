@@ -7,27 +7,24 @@ import {
   Link,
 } from "@mui/material";
 import React from "react";
-import './login.css';
-import CloseIcon from '@mui/icons-material/Close';
-import GoogleIcon from '@mui/icons-material/Google';
-import {makeStyles,ThemeProvider} from "@mui/styles";
-
-const useStyle=makeStyles((theme)=>({
-    bgcolor:{
-        backgroundColor:"-moz-initial",
-    },
-    
-}));
+import "./Login.css";
+import CloseIcon from "@mui/icons-material/Close";
+import GoogleIcon from "@mui/icons-material/Google";
+// import { Routes, Route } from "react-router-dom";
 
 function Login() {
-    const paperStyle={padding:20,height:'75vh',width:450,margin:"20px auto"}
-    const btstyle={margin:"8px 0"}
-    const font={fontSize:17}
-    const classes=useStyle();
+  const paperStyle = {
+    padding: 20,
+    height: "75vh",
+    width: 450,
+    margin: "20px auto",
+  };
+  const btstyle = { margin: "8px 0" };
+  const font = { fontSize: 17 };
   return (
     <>
-    <Grid className={classes.bgcolor}>
-      <Paper className="paper" elevation={10} style={paperStyle}>
+      <Grid>
+        <Paper className="paper" elevation={10} style={paperStyle}>
           <div className="close">
             <Button>
               <CloseIcon />

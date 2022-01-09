@@ -6,6 +6,11 @@ import {
   Menu,
   // Box,
   MenuItem,
+  IconButton,
+  Drawer,
+  List,
+  ListItemText,
+  ListItemButton,
   // Container,
   // Theme,
 } from "@mui/material";
@@ -13,8 +18,9 @@ import {
 import { Link } from "react-router-dom";
 import LoginIcon from "@mui/icons-material/Login";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import PopupState, { bindMenu, bindTrigger } from "material-ui-popup-state";
-import React from "react";
+import React, { useState } from "react";
 
 // const useStyles = makeStyles((theme) => ({
 //   sectionDesktop: {
@@ -27,33 +33,46 @@ import React from "react";
 
 const Navbar = () => {
   // const classes = useStyles();
+  const [open, setOpen] = useState(false);
   return (
     <>
+      <Drawer open={open} onClose={() => setOpen(false)}>
+        <List
+          disablePadding
+          sx={{ width: "250px" }}
+          onClick={() => setOpen(false)}
+        >
+          <ListItemButton component={Link} to="/">
+            <ListItemText primary="Home"></ListItemText>
+          </ListItemButton>
+          <ListItemButton component={Link} to="/contact">
+            <ListItemText primary="Contact Us"></ListItemText>
+          </ListItemButton>
+          <ListItemButton component={Link} to="/about">
+            <ListItemText primary="About Us"></ListItemText>
+          </ListItemButton>
+        </List>
+      </Drawer>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" style={{ flexGrow: 1 }}>
+          <IconButton color="inherit" onClick={() => setOpen(true)}>
+            <MenuRoundedIcon />
+          </IconButton>
+          <Typography
+            variant="h6"
+            style={{ flexGrow: 1, textDecoration: "none" }}
+            color="inherit"
+            component={Link}
+            to="/"
+          >
             XcitEducation
           </Typography>
           {/* <div className={classes.sectionDesktop}> */}
           <div>
-            <Button color="inherit" sx={{ mr: 2 }} component={Link} to="/">
-              Home
-            </Button>
             <Button
+              variant="outlined"
+              sx={{ mr: 2 }}
               color="inherit"
-              sx={{ mr: 2 }}
-              component={Link}
-              to="/contact"
-            >
-              Contact
-            </Button>
-            <Button color="inherit" sx={{ mr: 2 }} component={Link} to="/about">
-              About Us
-            </Button>
-            <Button
-              variant="contained"
-              sx={{ mr: 2 }}
-              color="success"
               endIcon={<LoginIcon fontSize="small" />}
               component={Link}
               to="/login"
@@ -65,8 +84,8 @@ const Navbar = () => {
               {(popupState) => (
                 <>
                   <Button
-                    variant="contained"
-                    color="error"
+                    variant="outlined"
+                    color="inherit"
                     {...bindTrigger(popupState)}
                     endIcon={<ArrowDropDownOutlinedIcon fontSize="small" />}
                   >

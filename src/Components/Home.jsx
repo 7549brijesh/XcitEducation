@@ -10,17 +10,17 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import SendIcon from "@mui/icons-material/Send";
-import "./home.css";
+import "./Home.css";
 import work from "./image/work.jfif";
 import job from "./image/jobs.png";
 import { makeStyles } from "@mui/styles";
-const useStyles=makeStyles((theme)=>({
-  topographyStyle:{
-    display:"flex",
-  }
+const useStyles = makeStyles((theme) => ({
+  topographyStyle: {
+    display: "flex",
+  },
 }));
 const Home = () => {
-  const classes=useStyles();
+  const classes = useStyles();
   return (
     <>
       <Grid m={10}>
