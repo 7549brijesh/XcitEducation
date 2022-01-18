@@ -89,6 +89,8 @@ function Login() {
                 variant="contained"
                 style={btstyle}
                 fullWidth
+                component={Link}
+                to="/login/MyApplication"
               >
                 Login
               </Button>
@@ -103,12 +105,6 @@ function Login() {
           </Grid>
         </Paper>
       </Grid>
-      <Routes>
-        <Route path="/register/StudentReg" element={<StudentReg />} />
-        <Route path="/register/CompanyReg" element={<CompanyReg />} />
-        {/* <Route path="/login/StudentLog" element={<StudentLog />} /> */}
-        {/* <Route path="/login/CompanyLog" element={<CompanyLog />} /> */}
-      </Routes>
     </>
   );
 }
