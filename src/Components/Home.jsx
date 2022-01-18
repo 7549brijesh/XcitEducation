@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  Grid,
-  Container,
-  Button,
-  Link,
-  Paper,
-} from "@mui/material";
+import { Box, Typography, Grid, Button, Link, Paper } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import SendIcon from "@mui/icons-material/Send";
 import "./Home.css";
@@ -57,7 +49,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -69,7 +61,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -81,7 +73,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -93,7 +85,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -110,7 +102,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -122,7 +114,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -134,7 +126,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -146,7 +138,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -173,7 +165,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -185,7 +177,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -197,7 +189,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -209,7 +201,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={work} />
+                  <img className="img" src={work} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Work from home
                   </Typography>
@@ -236,7 +228,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={job} />
+                  <img className="img" src={job} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Minimum CTC of 3LPA
                   </Typography>
@@ -248,7 +240,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={job} />
+                  <img className="img" src={job} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     Minimum CTC of 3LPA
                   </Typography>
@@ -260,7 +252,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={job} />
+                  <img className="img" src={job} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     100% verified jobs
                   </Typography>
@@ -272,7 +264,7 @@ const Home = () => {
             <Box>
               <Link className="u-line" href="#">
                 <Paper elevation={3}>
-                  <img className="img" src={job} />
+                  <img className="img" src={job} alt="No_image" />
                   <Typography p={2} textAlign="center">
                     100% verified jobs
                   </Typography>

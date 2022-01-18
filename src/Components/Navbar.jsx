@@ -22,17 +22,7 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import PopupState, { bindMenu, bindTrigger } from "material-ui-popup-state";
 import React, { useState } from "react";
 
-// const useStyles = makeStyles((theme) => ({
-//   sectionDesktop: {
-//     display: "none",
-//     [theme.breakpoints.up("md")]: {
-//       display: "flex",
-//     },
-//   },
-// }));
-
 const Navbar = () => {
-  // const classes = useStyles();
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -50,6 +40,18 @@ const Navbar = () => {
           </ListItemButton>
           <ListItemButton component={Link} to="/about">
             <ListItemText primary="About Us"></ListItemText>
+          </ListItemButton>
+          <ListItemButton component={Link} to="/Internship">
+            <ListItemText primary="Internship"></ListItemText>
+          </ListItemButton>
+          <ListItemButton component={Link} to="/login/MyApplicationCard">
+            <ListItemText primary="My Application"></ListItemText>
+          </ListItemButton>
+          <ListItemButton component={Link} to="/Employee/Dashboard">
+            <ListItemText primary="Employee Dashboard"></ListItemText>
+          </ListItemButton>
+          <ListItemButton component={Link} to="/Employee/Internship">
+            <ListItemText primary="Employee Internships"></ListItemText>
           </ListItemButton>
         </List>
       </Drawer>

@@ -6,13 +6,26 @@ import {
   Typography,
   Link,
 } from "@mui/material";
-import React from "react";
+// import { Link } from "react-router-dom";
+import { React, useState } from "react";
 import "./Login.css";
 import CloseIcon from "@mui/icons-material/Close";
 import GoogleIcon from "@mui/icons-material/Google";
 // import { Routes, Route } from "react-router-dom";
 
 function Login() {
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+
+  let name, value;
+  const handleChange = (e) => {
+    console.log(user);
+    name = e.target.name;
+    value = e.target.value;
+    setUser({ ...user, [name]: value });
+  };
   const paperStyle = {
     padding: 20,
     height: "75vh",
@@ -60,12 +73,16 @@ function Login() {
               </div>
               <Grid>
                 <TextField
+                  onChange={handleChange}
+                  name="email"
                   label="Email"
                   placeholder="@example.com"
                   fullWidth
                   required
                 ></TextField>
                 <TextField
+                  onChange={handleChange}
+                  name="password"
                   label="Password"
                   sx={{ mt: 2 }}
                   placeholder="Enter Password"
