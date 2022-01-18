@@ -16,6 +16,10 @@ import Internship from "./Components/Internship";
 import { createTheme, ThemeProvider } from "@mui/material";
 import Employee_dash from "./Components/Employee_dash";
 import Employee_intern_dash from "./Components/Employee_intern_dash";
+import Ide from "./Components/Ide";
+import IndividualPage from "./Components/IndividualPage";
+import PostIntern from "./Components/PostIntern";
+import Question from "./Components/Question";
 
 const theme = createTheme({
   margin: 0,
@@ -38,6 +42,10 @@ function App() {
             <Route path="/login/CompanyLog" element={<CompanyLog />} />
             <Route path="/login/MyApplication" element={<MyApplication />} />
             <Route path="/Internship" element={<Internship />} />
+            <Route path="/ide" element={<Ide />} />
+            <Route path="/individualPage" element={<IndividualPage />} />
+            <Route path="/postIntern" element={<PostIntern />} />
+            <Route path="/question" element={<Question />} />
             <Route
               path="/login/MyApplicationCard"
               element={<MyApplicationCard />}
