@@ -17,8 +17,7 @@ import Duration from "@mui/icons-material/AvTimer";
 import Stipend from "@mui/icons-material/Paid";
 import ApplyBy from "@mui/icons-material/AccessTimeFilled";
 import Applicants from "@mui/icons-material/PeopleOutline";
-
-function IndividualComPage() {
+const IndividualPage = () => {
   return (
     <>
       <Grid ml={25} mr={25} mt={8}>
@@ -278,20 +277,21 @@ function IndividualComPage() {
                   sx={{ border: "3px solid #FFAB76 ", color: "#B3541E" }}
                   p={1}
                   mt={5}
+                  
                 >
                   <Typography display="flex">
                     <ErrorOutlineIcon />
                     Save yourself from fraud!
                   </Typography>
-
+                  
                   <Box pt={1}>
-                    <Typography>
-                      if an employer asks you to pay any security deposit,
-                      registration fee, laptop fee, etc., do not pay and notify
-                      us immediately. Remember, Internshala doesn't charge a fee
-                      from the students to apply to a job or an internship & we
-                      don't allow other companies to do so either.
-                    </Typography>
+                  <Typography >
+                    if an employer asks you to pay any security deposit,
+                    registration fee, laptop fee, etc., do not pay and notify us
+                    immediately. Remember, Internshala doesn't charge a fee from
+                    the students to apply to a job or an internship & we don't
+                    allow other companies to do so either.
+                  </Typography>
                   </Box>
                 </Typography>
               </Grid>
@@ -301,6 +301,6 @@ function IndividualComPage() {
       </Grid>
     </>
   );
-}
+};
 
-export default IndividualComPage;
+export default IndividualPage;
