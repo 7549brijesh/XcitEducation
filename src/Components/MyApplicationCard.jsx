@@ -4,12 +4,8 @@ import CardContent from "@mui/material/CardContent";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-import CardMedia from "@mui/material/CardMedia";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import SkipNextIcon from "@mui/icons-material/SkipNext";
+
 import React from "react";
 import { useTheme, Paper, Container } from "@mui/material";
 

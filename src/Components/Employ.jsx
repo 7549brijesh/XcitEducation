@@ -5,26 +5,16 @@ import {
   Button,
   Typography,
   Link,
-  Avatar,
   Box,
 } from "@mui/material";
 import React from "react";
-import "./style.css";
-import Edu from "../image/edu.svg";
-import work from "../image/jobs.png";
-import Carousel from "react-elastic-carousel";
-// import "./styles.css";
-import img1 from "../image/jobs.png";
-import img2 from "../image/jobs.png";
-import img3 from "../image/jobs.png";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import "./Employ.css";
+import Edu from "./image/edu.svg";
+import work from "./image/jobs.png";
+// import Carousel from "react-material-ui-carousel";
+// import Login from "../../login/Login";
 
-const stle = {
-  width: "70vw",
-};
-const breakPoints = [{ height: 100, itemsToShow: 1 }];
 function Employ() {
-
   const paperStyle = {
     padding: 20,
     height: "65vh",
@@ -37,7 +27,7 @@ function Employ() {
   return (
     <Grid container>
       <Grid item lg={6} md={12} sm={12}>
-        <img style={{ width: "80%", marginTop: "105px" }} src={Edu} alt="img" />
+        <img style={{width:"80%",marginTop:"105px"}} src={Edu} alt="img" />
       </Grid>
       <Grid item lg={6} md={12} sm={12}>
         <Paper className="paper" elevation={10} style={paperStyle}>
@@ -99,13 +89,7 @@ function Employ() {
           </Grid>
         </Paper>
       </Grid>
-      <Grid
-        display="flex"
-        alignItems="center"
-        flexDirection="column"
-        ml={20}
-        mt={5}
-      >
+      <Grid display="flex" alignItems="center" flexDirection="column" ml={20}  mt={5}>
         <Typography variant="h4">Hire interns in 3 simple steps</Typography>
         <Grid container spacing={3} mt={4} ml={6}>
           <Grid item lg={4} md={4} sm={6} xs={12}>
@@ -149,75 +133,13 @@ function Employ() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid mt="45px" ml="200px">
-        <h1 style={{ textAlign: "center",marginBottom:"15px" }}>2,95,299 companies trust us</h1>
-        <div style={stle}>
-          <Carousel>
-            <Grid>
-              <Paper elevation={4}>
-                <Box p={3}>
-                  <Box display="flex" >
-                    <Avatar alt="Travis Howard" src={img1} />
-                    <Typography ml={2}>
-                      <Typography>Arvind K | Achieve Thyself</Typography>
-                      <Typography>
-                        <LinkedInIcon />
-                      </Typography>
-                    </Typography>
-                  </Box>
-                  <Typography p={3}>
-                  "I didn't expect such a quick response to my requirements.
-                  Thanks to <br /> Internshala, I could hire interns within a day. This
-                  is a boon for anyone <br /> looking for interns and also for the
-                  people who want to build their repertoire <br /> of work."
-                </Typography>
-                </Box>
-              </Paper>
-            </Grid>
-            <Grid>
-            <Paper elevation={4}>
-                <Box p={3}>
-                  <Box display="flex" >
-                    <Avatar alt="Travis Howard" src={img1} />
-                    <Typography ml={2}>
-                      <Typography>Arvind K | Achieve Thyself</Typography>
-                      <Typography>
-                        <LinkedInIcon />
-                      </Typography>
-                    </Typography>
-                  </Box>
-                  <Typography p={3}>
-                  "I didn't expect such a quick response to my requirements.
-                  Thanks to <br /> Internshala, I could hire interns within a day. This
-                  is a boon for anyone <br /> looking for interns and also for the
-                  people who want to build their repertoire <br /> of work."
-                </Typography>
-                </Box>
-              </Paper>
-            </Grid>
-            <Grid>
-            <Paper elevation={4}>
-                <Box p={3}>
-                  <Box display="flex" >
-                    <Avatar alt="Travis Howard" src={img1} />
-                    <Typography ml={2}>
-                      <Typography>Arvind K | Achieve Thyself</Typography>
-                      <Typography>
-                        <LinkedInIcon />
-                      </Typography>
-                    </Typography>
-                  </Box>
-                  <Typography p={3}>
-                  "I didn't expect such a quick response to my requirements.
-                  Thanks to <br /> Internshala, I could hire interns within a day. This
-                  is a boon for anyone <br /> looking for interns and also for the
-                  people who want to build their repertoire <br /> of work."
-                </Typography>
-                </Box>
-              </Paper>
-            </Grid>
-          </Carousel>
-        </div>
+      <Grid>
+        {/* <Carousel>
+          {items.map((item, i) => (
+            <Item key={i} item={item} />
+          ))}
+        </Carousel> */}
+        
       </Grid>
     </Grid>
   );

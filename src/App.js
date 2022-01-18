@@ -1,17 +1,19 @@
 import "./App.css";
-import Footer from "./Footer/Footer";
-import Navbar from "./Navbar/Navbar";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Home from "./Pages/Home";
-import Login from "./Login/Login";
-import StudentReg from "./Register/StudentReg";
-import CompanyReg from "./Register/CompanyReg";
-import StudentLog from "./Login/StudentLog";
-import CompanyLog from "./Login/CompanyLog";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import Home from "./Components/Home";
+import Login from "./Components/Login";
+// import StudentReg from "./Register/StudentReg";
+// import CompanyReg from "./Register/CompanyReg";
+import StudentLog from "./Components/StudentLog";
+import CompanyLog from "./Components/CompanyLog";
+import Student from "./Components/Student";
+import Employ from "./Components/Employ";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MyApplication from "./My Application/MyApplication";
-import MyApplicationCard from "./My Application/MyApplicationCard";
+import MyApplication from "./Components/MyApplicationTable";
+import MyApplicationCard from "./Components/MyApplicationCard";
 
 function App() {
   return (
@@ -23,8 +25,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login/*" element={<Login />} />
-          <Route path="/register/Student" element={<StudentReg />} />
-          <Route path="/register/Company" element={<CompanyReg />} />
+          <Route path="/register/Student" element={<Student />} />
+          <Route path="/register/Company" element={<Employ />} />
           <Route path="/login/StudentLog" element={<StudentLog />} />
           <Route path="/login/CompanyLog" element={<CompanyLog />} />
           <Route path="/login/MyApplication" element={<MyApplication />} />
