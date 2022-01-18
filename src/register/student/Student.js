@@ -1,16 +1,18 @@
-import { Grid, Paper, TextField,Button,Typography,Link } from "@mui/material";
+import { Grid, Paper, TextField,Button,Typography,Link,Box ,ImageList} from "@mui/material";
 import React from "react";
 import './style.css';
 import GoogleIcon from '@mui/icons-material/Google';
-import Login from "../../login/Login";
+import Edu from '../image/edu.svg';
+
 
 function Student() {
-    const paperStyle={padding:20,height:'72vh',width:450,margin:"20px auto"}
+    const paperStyle={padding:20,height:'72vh',width:450}
     const btstyle={margin:"10px 0"}
     const Textstyle={margin:"0 4px"}
     const font={fontSize:17}
   return (
-    <Grid>
+    <Grid display="flex">
+      <img src={Edu} alt="img" />
       <Paper className="paper" elevation={10} style={paperStyle}>
           <Grid>
               <div className="container">
@@ -47,11 +49,9 @@ function Student() {
                   <Grid sx={{ justifyContent: 'center' }}>
                       <Typography ml={5} style={font}>
                       Already registered?
-                          <Link href={Login}>Login</Link>
+                          <Link href="#">Login</Link>
                       </Typography>
                   </Grid>
-                  
-
               </div>
           </Grid>
       </Paper>

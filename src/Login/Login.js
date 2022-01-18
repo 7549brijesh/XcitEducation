@@ -7,11 +7,14 @@ import {
   Link,
 } from "@mui/material";
 import React from "react";
+import { Route,Routes } from "react-router-dom";
 import './login.css';
 import CloseIcon from '@mui/icons-material/Close';
 import GoogleIcon from '@mui/icons-material/Google';
 import {makeStyles,ThemeProvider} from "@mui/styles";
-
+// import StudentLog from "../Login/Login";
+import StudentReg from "../register/student/Student";
+import CompanyReg from "../register/employ/Employ";
 const useStyle=makeStyles((theme)=>({
     bgcolor:{
         backgroundColor:"-moz-initial",
@@ -103,8 +106,8 @@ function Login() {
       <Routes>
         <Route path="/register/StudentReg" element={<StudentReg />} />
         <Route path="/register/CompanyReg" element={<CompanyReg />} />
-        <Route path="/login/StudentLog" element={<StudentLog />} />
-        <Route path="/login/CompanyLog" element={<CompanyLog />} />
+        {/* <Route path="/login/StudentLog" element={<StudentLog />} /> */}
+        {/* <Route path="/login/CompanyLog" element={<CompanyLog />} /> */}
       </Routes>
     </>
   );

@@ -12,14 +12,14 @@ import LoginIcon from "@mui/icons-material/Login";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
 import PopupState, { bindMenu, bindTrigger } from "material-ui-popup-state";
 import React from "react";
-import About from "../Pages/About";
+import About from "../Pages/Question";
 import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
 import Login from "../Login/Login";
-import StudentReg from "../Register/StudentReg";
-import CompanyReg from "../Register/CompanyReg";
-import StudentLog from "../Login/StudentLog";
-import CompanyLog from "../Login/CompanyLog";
+import StudentReg from "../register/student/Student";
+import CompanyReg from "../register/employ/Employ";
+import StudentLog from "../Login/Login";
+// import CompanyLog from "../Login/CompanyLog";
 
 // const useStyles = makeStyles((theme) =>({
 //     sectionDesktop: {
@@ -114,7 +114,7 @@ const Navbar = () => {
           <Route path="/register/StudentReg" element={<StudentReg />} />
           <Route path="/register/CompanyReg" element={<CompanyReg />} />
           <Route path="/login/StudentLog" element={<StudentLog />} />
-          <Route path="/login/CompanyLog" element={<CompanyLog />} />
+          {/* <Route path="/login/CompanyLog" element={<CompanyLog />} /> */}
         </Routes>
       </BrowserRouter>
       {/* </ThemeProvider> */}
